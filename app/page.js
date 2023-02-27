@@ -1,90 +1,43 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Orbitron } from 'next/font/google'
 import styles from './page.module.css'
+import Navbar from './navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const orbitronTitle = Orbitron({ 
+  subsets: ['latin'],
+  variable: '--orbitron-font'
+})
 
 export default function Home() {
   return (
+    
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <Navbar />
+      <div className='m-10'>
+      <h1 className={`${orbitronTitle.variable} text-indigo-700 text-4xl md:text-8xl mb-10`}>Transforme seus <br/> desafios em soluções </h1> 
+      <h3 className={`${orbitronTitle.variable} text-white text-2xl md:text-4xl flex flex-row`}>Na Reframe, fornecemos soluções personalizadas para o crescimento da <br/> sua empresa através de consultoria, desenvolvimento de software e <br/> análise de dados. Oferecemos inovação através de uma abordagem <br/> integrada para impulsionar o crescimento do seu negócio.</h3>
+      <button className='bg-indigo-700 mt-10 w-48 h-10 rounded text-white border'>Saiba mais</button>
+      </div>
+      <div className='mt-20 justify-center flex flex-row '>
+        <div className='w-1/3 bg-indigo-700 ml-10 mr-5 md:mr-32 rounded-3xl md:ml-0'></div>
+        <div className='flex flex-col mr-10'>
+        <h3 className={`${orbitronTitle.variable}  text-white text-2xl md:text-4xl`}>Desbloqueamos todo o potencial  da <br/> sua empresa, de maneira <br/>  personalizada </h3>
+        <span className={`${orbitronTitle.variable}  text-white text- md:text-2xl mt-10`} >Entendemos que cada negócio é único, com seus <br/> próprios desafios e oportunidades. É por isso que <br/> nossa consultoria organizacional é altamente <br/> personalizada e visa entender de perto as <br/> dificuldades que sua empresa enfrenta. A partir <br/> daí, desenvolvemos soluções inovadoras e certeiras <br/> para ajudá-lo a alcançar seus objetivos e <br/> desbloquear seu potencial máximo.</span>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+      <div className='mt-20 justify-center flex flex-row '>
+      <div className='flex flex-col mr-10'>
+        <h3 className={`${orbitronTitle.variable}  text-white text-2xl md:text-4xl`}>Softwares inteligentes e <br/> personalizados ao seu  <br/>  alcance </h3>
+        <span className={`${orbitronTitle.variable}  text-white text- md:text-2xl mt-10`} > Transformamos suas ideias em realidade  <br/> com nossas soluções personalizadas de  <br/> desenvolvimento de software. Com uma  <br/> abordagem colaborativa e ágil, estamos  <br/> prontos para ajudá-lo a atingir seus objetivos  <br/> e se destacar no mercado.</span>
         </div>
+        <div className='w-1/3 bg-indigo-700 ml-10 mr-5 md:ml-32 rounded-3xl '></div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className='mt-20 justify-center flex flex-row mb-20   '>
+        <div className='w-1/3 bg-indigo-700 ml-10 mr-5 md:mr-32 rounded-3xl md:ml-0'></div>
+        <div className='flex flex-col mr-10'>
+        <h3 className={`${orbitronTitle.variable}  text-white text-2xl md:text-4xl`}>Transformamos dados em ação</h3>
+        <span className={`${orbitronTitle.variable}  text-white text- md:text-2xl mt-10`} >Entendemos que cada negócio é único, com seus <br/> próprios desafios e oportunidades. É por isso que <br/> nossa consultoria organizacional é altamente <br/> personalizada e visa entender de perto as <br/> dificuldades que sua empresa enfrenta. A partir <br/> daí, desenvolvemos soluções inovadoras e certeiras <br/> para ajudá-lo a alcançar seus objetivos e <br/> desbloquear seu potencial máximo.</span>
+        </div>
       </div>
     </main>
   )
