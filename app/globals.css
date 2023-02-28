@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+HTML{ Height:100%; } Body{ Height:100%; }
+#bg {
+    background-image: url("/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(0.5px);
+    backdrop-filter: hue-rotate(10deg);
+  }
+
+  #bg_1 {
+    background-image: url("/dashboard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(0.5px);
+    backdrop-filter: hue-rotate(10deg);
+  }
+  @media only screen and (max-width: 1400px) {
+    #bg {
+        background-image: url("/bg2.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        backdrop-filter: blur(0.5px);
+        backdrop-filter: hue-rotate(10deg);
+      }
+  }
