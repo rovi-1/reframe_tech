@@ -19,9 +19,9 @@ export default function Home() {
       <div id="bg" className='pb-20 '>
       <Navbar />
       <div className='ml-10 md:ml-64 mt-10 md:mt-28 mr-10 md:mr-64 justify-center flex flex-col mb-auto md:mb-72 '>
-      <h1 className={`${orbitronTitle.className} text-transparent justify-center text-left flex flex-row text-white md:bg-clip-text md:bg-gradient-to-r from-white md:text-8xl text-2xl  mb-10 animate-spin`}>Transforme seus desafios em soluções </h1> 
+      <h1 className={`${orbitronTitle.className} text-transparent justify-center text-left flex flex-row text-white md:bg-clip-text md:bg-gradient-to-r from-white md:text-8xl text-2xl  mb-10 animate-pulse`}>Transforme seus desafios em soluções </h1> 
       <h3 className={`${MontTitle.className} text-white justify-center  text-2xl lg:text-2xl md:text-4xl flex flex-row text-justify`}>Na Reframe, fornecemos soluções personalizadas para o crescimento da sua empresa através de consultoria, desenvolvimento de software e análise de dados.</h3>
-      <button className='bg-transparent  hover:bg-white hover:text-indigo-900 mt-10 w-48 h-10 rounded text-white border '>Saiba mais</button>
+      <button className='bg-transparent  hover:bg-white hover:text-indigo-900 mt-10 w-48 h-10 rounded text-white border animate-bounce '>Saiba mais</button>
       </div>
       </div>
       <div className='md:mt-96 md:mr-56 md:mb-96 md:ml-56 mt-10 ml-14 mr-14 flex flex-row justify-center '>
