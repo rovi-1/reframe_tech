@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-HTML{ Height:100%; } Body{ Height:100%; }
+HTML {
+  height: 100%;
+}
+Body {
+  height: 100%;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -13,26 +18,67 @@ HTML{ Height:100%; } Body{ Height:100%; }
   }
 }
 #bg {
-    background-image: url("/bg.png");
+  background-image: url('/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  backdrop-filter: blur(0.5px);
+  backdrop-filter: hue-rotate(10deg);
+}
+#consultoriaBG {
+  background-image: url('/consultoriaBG.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  backdrop-filter: blur(0.5px);
+  backdrop-filter: hue-rotate(10deg);
+}
+#desenvolvimentoBG {
+  background-image: url('/desenvolvimentoBG.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  backdrop-filter: blur(0.5px);
+  backdrop-filter: hue-rotate(10deg);
+}
+#analiseBG {
+  background-image: url('/analiseBG.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  backdrop-filter: blur(0.5px);
+  backdrop-filter: hue-rotate(10deg);
+}
+#bg_1 {
+  background-image: url('/consultoria.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  backdrop-filter: blur(0.5px);
+  backdrop-filter: hue-rotate(10deg);
+  height: 535px;
+}
+#bg_2 {
+  background-image: url('/desenvolvimento.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  backdrop-filter: blur(0.5px);
+  backdrop-filter: hue-rotate(10deg);
+  height: 535px;
+}
+#bg_3 {
+  background-image: url('/analisededados.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  backdrop-filter: blur(0.5px);
+  backdrop-filter: hue-rotate(10deg);
+  height: 535px;
+}
+
+@media only screen and (max-width: 1400px) {
+  #bg {
+    background-image: url('/bg2.png');
     background-repeat: no-repeat;
     background-size: 100%;
     backdrop-filter: blur(0.5px);
     backdrop-filter: hue-rotate(10deg);
   }
-
-  #bg_1 {
-    background-image: url("/dashboard.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(0.5px);
-    backdrop-filter: hue-rotate(10deg);
-  }
-  @media only screen and (max-width: 1400px) {
-    #bg {
-        background-image: url("/bg2.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        backdrop-filter: blur(0.5px);
-        backdrop-filter: hue-rotate(10deg);
-      }
-  }
+}
