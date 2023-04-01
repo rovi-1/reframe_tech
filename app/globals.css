@@ -24,6 +24,7 @@ Body {
   backdrop-filter: blur(0.5px);
   backdrop-filter: hue-rotate(10deg);
 }
+
 #consultoriaBG {
   background-image: url('/consultoriaBG.png');
   background-repeat: no-repeat;
@@ -48,7 +49,7 @@ Body {
 #bg_1 {
   background-image: url('/consultoria.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 90%;
   background-position-x: 50%;
   backdrop-filter: blur(0.5px);
   backdrop-filter: hue-rotate(10deg);
@@ -57,7 +58,7 @@ Body {
 #bg_2 {
   background-image: url('/desenvolvimento.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 90%;
   background-position-x: 50%;
   backdrop-filter: blur(0.5px);
   backdrop-filter: hue-rotate(10deg);
@@ -66,7 +67,7 @@ Body {
 #bg_3 {
   background-image: url('/analisededados.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 90%;
   background-position-x: 50%;
   backdrop-filter: blur(0.5px);
   backdrop-filter: hue-rotate(10deg);
@@ -81,4 +82,60 @@ Body {
     backdrop-filter: blur(0.5px);
     backdrop-filter: hue-rotate(10deg);
   }
+  #consultoriaBG {
+    background-image: url('/bgConsultoria2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(0.5px);
+    backdrop-filter: hue-rotate(10deg);
+  }
+  #desenvolvimentoBG {
+    background-image: url('/bgDesenvolvimento2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(0.5px);
+    backdrop-filter: hue-rotate(10deg);
+  }
+  #analiseBG {
+    background-image: url('/bgAnalise2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    backdrop-filter: blur(0.5px);
+    backdrop-filter: hue-rotate(10deg);
+  }
+  #bg_1 {
+    height: 500px;
+    background-size: 90%;
+    width: 100%;
+  }
+  #bg_2 {
+    height: 500px;
+    background-size: 90%;
+    width: 100%;
+  }
+  #bg_3 {
+    height: 500px;
+    background-size: 90%;
+    width: 100%;
+  }
 }
+
+
+@media (max-width: 768px) {
+  #bg_1 {
+    height: 280px;
+    background-size: 90%;
+    width: 100%;
+  }
+  #bg_2 {
+    height: 280px;
+    background-size: 90%;
+    width: 100%;
+  }
+  #bg_3 {
+    height: 280px;
+    background-size: 90%;
+    width: 100%;
+  }
+}
+
