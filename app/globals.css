@@ -73,7 +73,15 @@ Body {
   backdrop-filter: hue-rotate(10deg);
   height: 535px;
 }
+.card:hover {
 
+
+}
+
+.card-back {
+
+  
+}
 @media only screen and (max-width: 1400px) {
   #bg {
     background-image: url('/bg2.png');
