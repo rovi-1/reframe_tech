@@ -55,7 +55,7 @@ function FrontOfCardConsultoria() {
               <span
                 className={`${orbitronTitle.className}  md:text-left text-center   text-white text-sm xl:text-lg 2xl:text-2xl mt-10 tracking-widest `}
               >
-                Com uma abordagem colaborativa e ágil, trabalhamos em estreita
+                Com uma abordagem colaborativa e ágil, trabalhamos estreitamente em
                 colaboração para entender as suas necessidades e desafios, a fim
                 de desenvolver soluções que atendam aos seus requisitos.
                 Utilizamos tecnologia para oferecer as soluções mais eficazes,
