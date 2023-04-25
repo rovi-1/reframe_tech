@@ -2,12 +2,13 @@ import './globals.css'
 
 
 export const metadata = {
-  title: 'REFRAME TECH',
+  title: 'SKYFRAME',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html className="dark" lang="en">  
+    <html className="dark" lang="en">
+     
       <body className="bg-white dark:bg-black" >
         {children}
         </body>
