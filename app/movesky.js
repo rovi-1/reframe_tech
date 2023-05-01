@@ -1,43 +1,44 @@
+"use client";
 import Image from 'next/image';
 import styles from './page.module.css';
 import Navbar from './navbar';
-import Contato from './formContato';
-import Link from 'next/link';
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { Orbitron } from 'next/font/google';
 import { Montserrat } from 'next/font/google';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import dynamic from 'next/dynamic';
-import 'aos/dist/aos.css';
-
-const Proposito = dynamic(() => import('./proposito'), {
-  ssr: false,
-});
-const CardConsultoria = dynamic(() => import('./cardconsultoria'), {
-  ssr: false,
-});
-const CardDesenvolvimento = dynamic(() => import('./carddesenvolvimento'), {
-  ssr: false,
-});
-const CardAnalise = dynamic(() => import('./cardanalise'), { ssr: false });
-
 const orbitronTitle = Orbitron({
-  subsets: ['latin'],
-});
-const orbitronTitle2 = Orbitron({
-  subsets: ['latin'],
-  weight: '600',
-});
-const MontTitle = Montserrat({
-  subsets: ['latin'],
-});
-
-
-
-export default function Home() {
+    subsets: ['latin'],
+  });
+  const orbitronTitle2 = Orbitron({
+    subsets: ['latin'],
+    weight: '600',
+  });
+  const MontTitle = Montserrat({
+    subsets: ['latin'],
+  });
+const squareVariants = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 2 } },
+    hidden: { opacity: 0, scale: 0 }
+  };
+export default function MoveSky() {
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+    useEffect(() => {
+      if (inView) {
+        controls.start("visible");
+      }
+    }, [controls, inView]);
   return (
-    <main className={styles.main}>
-      <div id="bg" className="pb-20 ">
+    
+    <motion.div
+    ref={ref}
+    animate={controls}
+    initial="hidden"
+    variants={squareVariants}
+    className="square"
+  >
+   <div id="bg" className="pb-20 ">
         <Navbar />
         <div className="ml-10 md:ml-64 mt-10 md:mt-28 mr-10 md:mr-64 justify-center flex flex-col mb-auto md:mb-72 ">
           <h1
@@ -54,16 +55,7 @@ export default function Home() {
           </h3>
         </div>
       </div>
-
-      <Proposito />
-
-      <CardConsultoria />
-
-      <CardDesenvolvimento />
-
-      <CardAnalise />
-
-      <Contato />
-    </main>
+    </motion.div>
   );
+  
 }
