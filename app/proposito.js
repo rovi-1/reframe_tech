@@ -17,6 +17,7 @@ const squareVariants = {
     hidden: { opacity: 0, scale: 0 }
   };
 export default function Proposito() {
+  
     const controls = useAnimation();
     const [ref, inView] = useInView();
     useEffect(() => {
