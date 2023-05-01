@@ -23,41 +23,42 @@ const MontTitle = Montserrat({
 export default function CardConsultoria() {
     AOS.init();
     return (
-      <Link href={'desenvolvimento'}>
+      <Link href={'consultoria'}>
         <section class="mx-auto w-fit p-12 flex justify-center items-center">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration="3000"
             class="w-full h-full group m-10"
           >
             <div class="relative overflow-hidden flex flex-col md:flex-row">
-              <div className="md:m-10 flex flex-col w-full md:w-1/2 md:ml-10 items-center mb-10">
+              <img
+                class="h-full w-full  md:w-1/2 object-cover"
+                src="..\consultoria.png"
+                alt=""
+              />
+              <div class="absolute h-full w-full md:w-1/2 bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <button class="bg-gray-900 rounded-full text-white py-4 px-16 hover:bg-gray-500">
+                  SAIBA MAIS
+                </button>
+              </div>
+              <div className="md:m-10 mt-10 flex flex-col w-full md:w-1/2 md:ml-10 items-center">
                 <h3
-                  className={`${orbitronTitle.className} text-center md:text-left text-white text-2xl xl:text-xl 2xl:text-4xl`}
+                  className={`${orbitronTitle.className} md:text-left text-center  text-white text-2xl xl:text-xl 2xl:text-4xl tracking-widest`}
                 >
-                  Softwares inteligentes epersonalizados ao seu{' '}
-                  <span className="text-purple-900"> alcance</span>
+                  Desbloqueamos todo o{' '}
+                  <span className="text-purple-900"> potencial</span> da sua
+                  empresa, de maneira personalizada
                 </h3>
                 <span
-                  className={`${orbitronTitle.className} text-center md:text-left  text-white text-sm xl:text-lg 2xl:text-2xl mt-10 tracking-widest `}
+                  className={`${orbitronTitle.className}  md:text-left text-center   text-white text-sm xl:text-lg 2xl:text-2xl mt-10 tracking-widest `}
                 >
-                  Transformamos suas ideias em realidade com nossas soluções
-                  personalizadas de desenvolvimento de software. Com uma
-                  abordagem colaborativa e ágil, estamos prontos para ajudá-lo a
-                  atingir seus objetivos e se destacar no mercado.
+                  Com uma abordagem colaborativa e ágil, trabalhamos
+                  estreitamente em colaboração para entender as suas
+                  necessidades e desafios, a fim de desenvolver soluções que
+                  atendam aos seus requisitos. Utilizamos tecnologia para
+                  oferecer as soluções mais eficazes, eficientes e
+                  personalizadas.
                 </span>
-              </div>
-              <div>
-                <img
-                  class="h-full w-full object-cover"
-                  src="..\desenvolvimento.png"
-                  alt=""
-                />
-                <div class="absolute h-full w-full md:w-1/2 place-content-center bg-black/20 flex items-center justify-left -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                  <button class="bg-gray-900 rounded-full text-white py-4 px-16 hover:bg-gray-500">
-                    SAIBA MAIS
-                  </button>
-                </div>
               </div>
             </div>
           </div>
