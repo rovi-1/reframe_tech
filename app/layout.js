@@ -2,7 +2,7 @@ import './globals.css'
 
 
 export const metadata = {
-  title: 'REFRAME TECH',
+  title: 'SKYFRAME TECH',
 }
 
 export default function RootLayout({ children }) {
