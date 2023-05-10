@@ -11,6 +11,21 @@ import AOS from 'aos';
 import dynamic from 'next/dynamic';
 import 'aos/dist/aos.css';
 
+const orbitronTitle = Orbitron({
+  subsets: ['latin'],
+  preload: false,
+});
+const orbitronTitle2 = Orbitron({
+  subsets: ['latin'],
+  weight: '600',
+  preload: false,
+});
+const MontTitle = Montserrat({
+  subsets: ['latin'],
+  preload: false,
+});
+
+
 const Proposito = dynamic(() => import('./proposito'), {
   ssr: false,
 });
@@ -20,18 +35,9 @@ const CardConsultoria = dynamic(() => import('./cardconsultoria'), {
 const CardDesenvolvimento = dynamic(() => import('./carddesenvolvimento'), {
   ssr: false,
 });
+
 const CardAnalise = dynamic(() => import('./cardanalise'), { ssr: false });
 
-const orbitronTitle = Orbitron({
-  subsets: ['latin'],
-});
-const orbitronTitle2 = Orbitron({
-  subsets: ['latin'],
-  weight: '600',
-});
-const MontTitle = Montserrat({
-  subsets: ['latin'],
-});
 
 
 
